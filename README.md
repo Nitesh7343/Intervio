@@ -1,2 +1,0 @@
-# Intervio
-AI interviewer
