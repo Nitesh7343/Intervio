@@ -84,6 +84,11 @@ Return strictly JSON:
 
 export const generateQuestion = async (req, res) => {
   try {
+
+    //for debuggung purpose
+    console.log("BODY:", req.body);
+    console.log("userId:", req.userId);
+
     let { role, experience, mode, resumeText, projects, skills } = req.body
 
     role = role?.trim();
@@ -95,6 +100,8 @@ export const generateQuestion = async (req, res) => {
     }
 
     const user = await User.findById(req.userId)
+
+    console.log("USER:", user);
 
     if (!user) {
       return res.status(404).json({
@@ -173,6 +180,8 @@ Make questions based on the candidate’s role, experience,interviewMode, projec
 
 
     const aiResponse = await askAi(messages)
+
+    console.log("AI RESPONSE:", aiResponse);
 
     if (!aiResponse || !aiResponse.trim()) {
            
