@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://intervio-1-ria1.onrender.com/api/$1"
+    }
+  ]
+}
