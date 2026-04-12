@@ -9,7 +9,8 @@ import userRouter from "./routes/user.route.js"
 import interviewRouter from "./routes/interview.route.js"
 import paymentRouter from "./routes/payment.route.js"
 
-const app = express()
+const app = express();
+app.set("trust proxy", 1);
 app.use(cors({
     origin:"https://intervio-tydp.vercel.app",
     credentials:true
