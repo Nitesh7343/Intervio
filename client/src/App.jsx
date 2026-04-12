@@ -12,8 +12,8 @@ import Pricing from './pages/Pricing'
 import InterviewReport from './pages/InterviewReport'
 
 
-// export const ServerUrl = import.meta.env.VITE_SERVER_URL
-export const ServerUrl = "";
+export const ServerUrl = import.meta.env.VITE_SERVER_URL
+// export const ServerUrl = "";
 
 function App() {
 
@@ -21,8 +21,8 @@ function App() {
   useEffect(()=>{
     const getUser = async () => {
       try {
-        //const result = await axios.get(ServerUrl + "/api/user/current-user", {withCredentials:true})
-        const result = await axios.get("/api/user/current-user", { withCredentials: true })
+        const result = await axios.get(ServerUrl + "/api/user/current-user", {withCredentials:true})
+        //const result = await axios.get("/api/user/current-user", { withCredentials: true })
         dispatch(setUserData(result.data))
       } catch (error) {
         console.log(error)
