@@ -14,6 +14,8 @@ import Navbar from "../components/Navbar";
 const cardStyle =
   "bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl p-5 shadow-sm";
 
+  export const ServerUrl = import.meta.env.VITE_SERVER_URL
+
 const UserPortfolio = () => {
   const [data, setData] = useState(null);
 
@@ -21,7 +23,7 @@ const UserPortfolio = () => {
     const fetchPortfolio = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:8000/api/user/portfolio",
+          serverUrl +"/api/user/portfolio",
           { withCredentials: true }
         );
         setData(res.data);
