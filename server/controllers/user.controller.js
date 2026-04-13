@@ -2,7 +2,7 @@ import User from "../models/user.model.js"
 import Interview from "../models/interview.model.js"
 import Payment from "../models/payment.model.js"
 
-const getPortfolio = async(req,res) => {
+export const getPortfolio = async(req,res) => {
   try
   {
     const userId = req.userId;
