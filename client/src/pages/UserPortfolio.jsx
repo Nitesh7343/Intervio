@@ -23,7 +23,7 @@ const UserPortfolio = () => {
     const fetchPortfolio = async () => {
       try {
         const res = await axios.get(
-          serverUrl +"/api/user/portfolio",
+          ServerUrl +"/api/user/portfolio",
           { withCredentials: true }
         );
         setData(res.data);
