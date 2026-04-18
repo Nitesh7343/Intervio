@@ -96,3 +96,57 @@ VITE_SERVER_URL=http://localhost:8000
 Run frontend
 npm run dev
 
+____________
+
+🌐 Deployment
+
+* Frontend: Vercel
+* Backend: Render
+
+Important Notes:
+
+* Use /api proxy in production
+* Configure CORS properly
+* Set cookies with:
+    * httpOnly: true
+    * secure: true
+    * sameSite: "None"
+
+⸻
+
+🔐 Authentication Flow
+
+1. User logs in via Google (Firebase)
+2. Backend verifies/creates user
+3. JWT token is generated and stored in cookies
+4. All protected routes use middleware (req.userId)
+
+⸻
+
+📌 Key Learnings
+
+* Handling CORS & cookies in production
+* Managing frontend-backend communication
+* Debugging deployment vs local issues
+* Implementing secure authentication systems
+* Designing scalable REST APIs
+* Integrating AI into real-world applications
+
+⸻
+
+🚀 Future Improvements
+
+* 🧠 AI-based strengths & weaknesses analysis
+* 📊 Multi-metric charts (confidence, communication, correctness)
+* 💳 Detailed payment history
+* 📱 Mobile responsiveness improvements
+* ⚡ WebSocket-based real-time interview
+
+⸻
+
+👨‍💻 Author
+
+Nitesh
+
+* GitHub: https://github.com/Nitesh7343
+* LinkedIn: https://www.linkedin.com/in/nitesh7343/
