@@ -38,3 +38,19 @@ Integrations
 * OpenRouter API (LLM Integration)
 * PDF.js (Resume Parsing)
 
+  ________
+
+Architecture
+
+Frontend (React)
+      ↓
+Backend (Node/Express)
+      ↓
+MongoDB + External APIs
+
+__________
+
+* Firebase handles authentication
+* JWT manages backend session & authorization
+* REST APIs handle business logic
+* AI services generate and evaluate interviews
