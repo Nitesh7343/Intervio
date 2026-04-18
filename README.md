@@ -54,3 +54,45 @@ __________
 * JWT manages backend session & authorization
 * REST APIs handle business logic
 * AI services generate and evaluate interviews
+
+__________
+
+📊 Dashboard Features
+
+* 👤 User Profile & Credits
+* 📈 Performance Trend Graph (Left → Right progression)
+* 🧾 Interview History
+* 📊 Average Score & Analytics
+
+_______
+
+
+⚙️ Setup Instructions
+
+1. Clone the Repository
+git clone https://github.com/your-username/intervio.git
+cd intervio
+
+2. Backend Setup
+cd server
+npm install
+
+Create .env
+PORT=8000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret
+OPENROUTER_API_KEY=your_api_key
+
+run backend
+npm run dev
+
+3. Frontend Setup
+cd client
+npm install
+
+Create .env:
+VITE_SERVER_URL=http://localhost:8000
+
+Run frontend
+npm run dev
+
