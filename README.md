@@ -14,3 +14,27 @@ Intervio is a full-stack AI-powered mock interview platform that helps users pra
 * 📈 Interactive Charts – Visualize performance trends using Recharts
 
 ⸻
+
+🧠 Tech Stack
+
+Frontend
+
+* React.js
+* Tailwind CSS
+* Recharts
+* Axios
+
+Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* JWT Authentication
+
+Integrations
+
+* Firebase (Google Auth)
+* Razorpay (Payments)
+* OpenRouter API (LLM Integration)
+* PDF.js (Resume Parsing)
+
