@@ -6,14 +6,13 @@ export const getPortfolio = async(req,res) => {
   try
   {
     const userId = req.userId;
-
     //user
     const user = await User.findById(userId).select("-password");
 
     if (!user) {
         return res.status(404).json({ message: "User not found" });
     }
-
+          
     //interview
     const interviews = await Interview.find({ userId })
         .sort({ createdAt: -1 });
@@ -40,7 +39,7 @@ export const getPortfolio = async(req,res) => {
         });
     }
 };
-
+  
 export const getCurrentUser = async (req,res) => {
     try {
         const userId = req.userId
