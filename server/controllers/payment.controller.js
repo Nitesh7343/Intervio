@@ -35,7 +35,6 @@ export const createOrder = async (req,res) => {
     }
 }
 
-
 export const verifyPayment = async (req,res) => {
     try {
         const {razorpay_order_id,
